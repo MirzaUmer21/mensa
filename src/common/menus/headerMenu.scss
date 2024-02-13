@@ -1,0 +1,26 @@
+@import '../../assets/sass/variables.scss';
+.topHeaderMenu {
+  .ant-anchor-wrapper {
+    &::before {
+      border: none !important;
+    }
+    .ant-anchor {
+      .ant-anchor-ink-visible {
+        display: none;
+      }
+      .ant-anchor-link {
+        font-family: $primaryFont;
+        font-size: 18px;
+        margin: 0 20px;
+        .ant-anchor-link-title {
+          color: white !important;
+        }
+      }
+      .ant-anchor-link-active {
+        .ant-anchor-link-title {
+          color: $secondaryColor !important;
+        }
+      }
+    }
+  }
+}

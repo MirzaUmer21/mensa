@@ -1,0 +1,88 @@
+@import '../assets/sass/_variables.scss';
+.servicesWrapper {
+  margin-top: 270px;
+  .singleServiceCard {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    height: 385px;
+    margin: 10px 0;
+
+    .content {
+      padding: 32px !important;
+      .headIcon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        margin-bottom: 30px;
+        .icon {
+          height: 90px;
+          width: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: rgba(205, 29, 91, 0.1);
+
+          // backdrop-filter: blur(20px);
+
+          box-shadow: 0 0 5px 5px rgba(205, 29, 91, 0.1);
+          svg {
+            height: 54px;
+            width: 54px;
+          }
+        }
+      }
+      h4 {
+        text-align: center;
+        font-family: $playBold;
+        font-size: 26px;
+        margin-bottom: 28px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+  .singleServiceCard.borderTop {
+    border: 1px solid #0000;
+    border-radius: 10px;
+    background: linear-gradient(#282828, #282828) padding-box,
+      linear-gradient(#cd1d5b, transparent) border-box;
+  }
+  .singleServiceCard.borderBottom {
+    border: 1px solid #0000;
+    border-radius: 10px;
+    background: linear-gradient(#282828, #282828) padding-box,
+      linear-gradient(#cd1d5b, rgba(255, 255, 255, 0.6)) border-box;
+  }
+  .seeMore {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    .seeMoreButton {
+      height: 44px;
+      border: none;
+      border-radius: 5px;
+      width: 177px;
+      background-color: $secondaryColor;
+      color: #fff;
+      font-size: 16px;
+      font-family: $playBold;
+      cursor: pointer;
+      transition: 0.3s ease-in;
+
+      font-weight: bold;
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $secondaryColor;
+        color: $secondaryColor;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+}

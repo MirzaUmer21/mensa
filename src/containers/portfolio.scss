@@ -1,0 +1,45 @@
+@import '../assets/sass/_variables.scss';
+
+.portfolioWrapper {
+  .portfolioSubHeading {
+    text-align: center;
+    font-family: $playBold;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  .mainPortfolioWrap {
+    margin-top: 57px;
+    .portfolioTabs {
+      display: flex;
+      gap: 15px;
+
+      button {
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 1px solid $secondaryColor;
+        color: $secondaryColor;
+        text-transform: uppercase;
+        font-family: $rajdhaniFont;
+        font-size: 23px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background-color: $secondaryColor;
+        }
+      }
+      button.activePortfolioTab {
+        color: #fff;
+        background-color: $secondaryColor;
+      }
+    }
+  }
+  .portfolioImagesWrap {
+    height: 850px;
+    img {
+      width: 100% !important;
+    }
+  }
+}

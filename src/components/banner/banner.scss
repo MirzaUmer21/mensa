@@ -1,0 +1,51 @@
+.mainSiteBanner {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  .backgroundImage {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      height: 100%;
+      width: auto;
+      background-image: linear-gradient(to top, black, #e03f3f);
+
+      height: auto;
+      z-index: -100;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  .mainBannerContent {
+    text-align: center;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    h2 {
+      font-size: 70px;
+      line-height: 100%;
+      margin-bottom: 14px;
+      font-style: italic;
+      font-weight: 500;
+    }
+    h5 {
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+  }
+}

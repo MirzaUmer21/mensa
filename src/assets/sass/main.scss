@@ -1,0 +1,26 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryFont;
+  color: #fff;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $primaryColor;
+  overflow-x: hidden;
+}
+#root {
+  min-height: 100vh;
+}
+h1 {
+  @include headingStyle;
+}
+h5 {
+  font-size: 18px;
+  font-family: 400;
+  font-family: $primaryFont;
+}

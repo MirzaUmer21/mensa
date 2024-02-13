@@ -1,0 +1,6 @@
+@import '../../assets/sass/_variables.scss';
+@import '../../assets/sass/_mixins.scss';
+
+.gradientButton {
+  @include btnStyle;
+}

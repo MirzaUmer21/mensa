@@ -1,0 +1,67 @@
+@import '../assets/sass/_variables.scss';
+.aboutWrapper {
+  margin: 50px 0;
+
+  h1 {
+    text-align: right;
+  }
+  .aboutClients {
+    background-image: linear-gradient(to right, #cd1d5b, #e03f3f);
+    height: 258px;
+    position: relative;
+
+    .aboutCover {
+      position: absolute;
+      height: 574px;
+      width: 499px;
+      top: -135px;
+      left: 0;
+    }
+    .aboutText {
+      // background-image: linear-gradient(
+      //   to right,
+      //   #cd1d5b,
+      //   rgba(104, 104, 104, 0.7)
+      // ); /* Linear gradient with transparent to opaque white */
+      background-color: #ffffff10;
+      backdrop-filter: blur(20px);
+      position: absolute;
+      max-width: 900px;
+      right: 0;
+      border: 2px solid $secondaryColor;
+      border-image: linear-gradient(to left, #cd1d5b, #cd1d5b00, transparent) 1;
+
+      top: 230px;
+      p {
+        line-height: 24px;
+        padding: 40px;
+        -webkit-text-stroke: 0.5px #cd1d5b;
+        font-size: 18px; /* Text stroke with width and color */
+      }
+    }
+    .aboutCountsWrapper {
+      .aboutCounts {
+        position: absolute;
+        right: 0;
+        display: flex;
+        bottom: -180px;
+        width: 50%;
+        gap: 100px;
+        .content {
+          h4 {
+            font-size: 72px;
+            line-height: 100%;
+            font-family: $playBold;
+          }
+          h5 {
+            font-family: $playBold;
+            margin-left: 10px;
+            font-size: 36px;
+            line-height: 100%;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

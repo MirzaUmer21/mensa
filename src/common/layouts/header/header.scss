@@ -1,0 +1,30 @@
+@import '../../../assets/sass/_variables.scss';
+.mainSiteHeader {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding and border are included in width and height */
+  height: 100px;
+  max-width: 1600px;
+  border: 2px solid $secondaryColor;
+  border-image: linear-gradient(to left, #cd1d5b, #cd1d5b00, transparent) 1;
+
+  .headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .siteHeaderLogo {
+      cursor: pointer;
+      svg {
+        height: 49px;
+        width: auto;
+      }
+    }
+  }
+}
