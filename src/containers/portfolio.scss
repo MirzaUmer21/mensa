@@ -1,6 +1,8 @@
 @import '../assets/sass/_variables.scss';
 
 .portfolioWrapper {
+  box-sizing: border-box;
+  height: auto;
   .portfolioSubHeading {
     text-align: center;
     font-family: $playBold;
@@ -34,12 +36,6 @@
         color: #fff;
         background-color: $secondaryColor;
       }
-    }
-  }
-  .portfolioImagesWrap {
-    height: 850px;
-    img {
-      width: 100% !important;
     }
   }
 }

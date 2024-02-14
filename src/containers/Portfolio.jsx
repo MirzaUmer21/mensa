@@ -17,6 +17,7 @@ import {
 
 export const Portfolio = () => {
   const isVisible = useScrollVisibility('.portfolioWrapper');
+
   const [activePortfolioTab, setActivePortfolioTab] = useState('featured');
   return (
     <div>
@@ -65,18 +66,7 @@ export const Portfolio = () => {
             </div>
           </div>
           <div className='portfolioImagesWrap'>
-            <PortfolioImages />
-            <Row>
-              <Col lg={16}>
-                <img src={Portfolio1} alt='' />
-                <img src={Portfolio2} alt='' />
-              </Col>
-              <Col lg={8}>
-                <img src={Portfolio3} alt='' />
-                <img src={Portfolio4} alt='' />
-                <img src={Portfolio5} alt='' />
-              </Col>
-            </Row>
+            <PortfolioImages isVisible={isVisible} />
           </div>
         </Container>
       </div>
