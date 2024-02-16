@@ -9,6 +9,15 @@
   background-clip: text;
   color: transparent;
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 95px;
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 45px;
+    text-align: center;
+  }
 }
 
 @mixin btnStyle {

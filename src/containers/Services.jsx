@@ -28,7 +28,7 @@ export const Services = () => {
             {services &&
               services?.map((service, ind) => {
                 return (
-                  <Col key={ind} lg={6} md={6} sm={8} xs={12}>
+                  <Col key={ind} lg={6} md={8} sm={12} xs={24}>
                     <motion.div
                       variants={
                         ind < 4 ? topToBottomAnimations : bottomToTopAnimations

@@ -16,7 +16,7 @@
     .portfolioTabs {
       display: flex;
       gap: 15px;
-
+      overflow-x: hidden;
       button {
         padding: 10px 20px;
         background-color: transparent;

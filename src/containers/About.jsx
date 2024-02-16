@@ -19,11 +19,11 @@ export const About = () => {
           variants={rightToLeftAnimations}
           initial='hidden'
           animate={isVisible ? 'show' : 'hidden'}
-          style={{ marginRight: '20px' }}
         >
           ABOUT US
         </motion.h1>
       </Container>
+
       <div className='aboutClients'>
         <Container>
           <div className='aboutCountsWrapper' style={{ position: 'relative' }}>

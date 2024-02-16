@@ -1,28 +1,30 @@
 @import '../assets/sass/_variables.scss';
 .aboutWrapper {
   margin: 50px 0;
-
   h1 {
     text-align: right;
+    margin-right: 20px;
+    @media (max-width: 1024px) {
+      text-align: center;
+      margin-right: 0;
+    }
   }
   .aboutClients {
     background-image: linear-gradient(to right, #cd1d5b, #e03f3f);
     height: 258px;
     position: relative;
-
     .aboutCover {
       position: absolute;
       height: 574px;
       width: 499px;
       top: -135px;
       left: 0;
+      max-width: 100% !important;
+      @media (max-width: 1024px) {
+        position: unset !important;
+      }
     }
     .aboutText {
-      // background-image: linear-gradient(
-      //   to right,
-      //   #cd1d5b,
-      //   rgba(104, 104, 104, 0.7)
-      // ); /* Linear gradient with transparent to opaque white */
       background-color: #ffffff10;
       backdrop-filter: blur(20px);
       position: absolute;
@@ -30,13 +32,20 @@
       right: 0;
       border: 2px solid $secondaryColor;
       border-image: linear-gradient(to left, #cd1d5b, #cd1d5b00, transparent) 1;
-
       top: 230px;
+      @media (max-width: 1024px) {
+        position: unset !important;
+      }
+
       p {
         line-height: 24px;
         padding: 40px;
         -webkit-text-stroke: 0.5px #cd1d5b;
         font-size: 18px; /* Text stroke with width and color */
+        @media (max-width: 1024px) {
+          font-size: 12px;
+          padding: 20px;
+        }
       }
     }
     .aboutCountsWrapper {
@@ -61,6 +70,9 @@
             font-weight: 500;
           }
         }
+      }
+      @media (max-width: 1024px) {
+        display: none !important;
       }
     }
   }

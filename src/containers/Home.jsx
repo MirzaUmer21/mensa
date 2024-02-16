@@ -9,9 +9,15 @@ export const Home = () => {
   return (
     <HomeLayout>
       <Banner />
-      <About />
-      <Services />
-      <Portfolio />
+      <div id='about'>
+        <About />
+      </div>
+      <div id='services'>
+        <Services />
+      </div>
+      <div id='portfolio'>
+        <Portfolio />
+      </div>
     </HomeLayout>
   );
 };
