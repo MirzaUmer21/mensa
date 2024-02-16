@@ -8,9 +8,12 @@ import {
   leftToRightAnimations,
   rightToLeftAnimations
 } from '../helpers/transitions';
+import { Col, Row } from 'antd';
+import { useMediaQuery } from 'react-responsive';
 
 export const About = () => {
   const isVisible = useScrollVisibility('.aboutWrapper');
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <div className='aboutWrapper'>
@@ -25,29 +28,115 @@ export const About = () => {
       </Container>
 
       <div className='aboutClients'>
-        <Container>
-          <div className='aboutCountsWrapper' style={{ position: 'relative' }}>
-            <div className='aboutCounts'>
-              <div className='content'>
-                <h4>100+</h4>
-                <h5>Projects</h5>
-              </div>
-              <div className='content'>
-                <h4>40+</h4>
-                <h5>Happy Clients</h5>
-              </div>
-            </div>
-          </div>
+        <div className='background'></div>
+        <div className='aboutCountsWrapper'>
+          <Container>
+            <div style={{ position: 'relative' }}>
+              {isTabletOrMobile ? (
+                <Row>
+                  <Col span={24} style={{ width: '100%' }}>
+                    <div className='aboutCounts'>
+                      <div className='content'>
+                        <h4>100+</h4>
+                        <h5>Projects</h5>
+                      </div>
+                      <div className='content'>
+                        <h4>40+</h4>
+                        <h5>Happy Clients</h5>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col span={24}>
+                    <motion.img
+                      variants={leftToRightAnimations}
+                      initial='hidden'
+                      animate={isVisible ? 'show' : 'hidden'}
+                      className='aboutCoverMobile'
+                      src={aboutCover}
+                      alt=''
+                    />
+                  </Col>
 
-          <motion.div
-            variants={leftToRightAnimations}
-            initial='hidden'
-            animate={isVisible ? 'show' : 'hidden'}
-            className='aboutCoverContainer'
-            style={{ position: 'relative' }}
-          >
-            <img className='aboutCover' src={aboutCover} alt='' />
-          </motion.div>
+                  <Col span={24}>
+                    <motion.div
+                      variants={rightToLeftAnimations}
+                      initial='hidden'
+                      animate={isVisible ? 'show' : 'hidden'}
+                      className='aboutTextConatiner'
+                      style={{ position: 'relative' }}
+                    >
+                      <div className='aboutText'>
+                        <p>
+                          Contrary to popular belief, Lorem Ipsum is not simply
+                          random text. It has roots in a piece of classical
+                          Latin literature from 45 BC, making it over 2000 years
+                          old. Richard McClintock, a Latin professor at
+                          Hampden-Sydney College in Virginia, looked up one of
+                          the more obscure Latin words Contrary to popular
+                          belief, Lorem Ipsum is not simply random text. It has
+                          roots in a piece of classical Latin literature from 45
+                          BC, making it over 2000 years old. Richard McClintock,
+                          a Latin professor at Hampden-
+                        </p>
+                      </div>
+                    </motion.div>
+                  </Col>
+                </Row>
+              ) : (
+                <Row gutter={10}>
+                  <Col span={12}>
+                    <motion.img
+                      variants={leftToRightAnimations}
+                      initial='hidden'
+                      animate={isVisible ? 'show' : 'hidden'}
+                      className='aboutCover'
+                      src={aboutCover}
+                      alt=''
+                    />
+                  </Col>
+                  <Col span={12}>
+                    <div className='aboutCounts'>
+                      <div className='content'>
+                        <h4>100+</h4>
+                        <h5>Projects</h5>
+                      </div>
+                      <div className='content'>
+                        <h4>40+</h4>
+                        <h5>Happy Clients</h5>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col span={24}>
+                    <motion.div
+                      variants={rightToLeftAnimations}
+                      initial='hidden'
+                      animate={isVisible ? 'show' : 'hidden'}
+                      className='aboutTextConatiner'
+                      style={{ position: 'relative' }}
+                    >
+                      <div className='aboutText'>
+                        <p>
+                          Contrary to popular belief, Lorem Ipsum is not simply
+                          random text. It has roots in a piece of classical
+                          Latin literature from 45 BC, making it over 2000 years
+                          old. Richard McClintock, a Latin professor at
+                          Hampden-Sydney College in Virginia, looked up one of
+                          the more obscure Latin words Contrary to popular
+                          belief, Lorem Ipsum is not simply random text. It has
+                          roots in a piece of classical Latin literature from 45
+                          BC, making it over 2000 years old. Richard McClintock,
+                          a Latin professor at Hampden-
+                        </p>
+                      </div>
+                    </motion.div>
+                  </Col>
+                </Row>
+              )}
+            </div>
+          </Container>
+        </div>
+
+        {/* <Container>
           <motion.div
             variants={rightToLeftAnimations}
             initial='hidden'
@@ -68,7 +157,7 @@ export const About = () => {
               </p>
             </div>
           </motion.div>
-        </Container>
+        </Container> */}
       </div>
     </div>
   );

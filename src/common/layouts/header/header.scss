@@ -16,7 +16,10 @@
     max-width: 1600px;
     border: 2px solid $secondaryColor;
     border-image: linear-gradient(to left, #cd1d5b, #cd1d5b00, transparent) 1;
-
+    @media only screen and (max-width: 600px) {
+      width: 100%; /* Set width to 100% for smaller screens */
+      max-width: none;
+    }
     .headerContent {
       display: flex;
       align-items: center;

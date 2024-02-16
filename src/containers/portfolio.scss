@@ -3,6 +3,9 @@
 .portfolioWrapper {
   box-sizing: border-box;
   height: auto;
+  overflow-x: hidden;
+  margin-top: 30px;
+
   .portfolioSubHeading {
     text-align: center;
     font-family: $playBold;
