@@ -24,3 +24,12 @@ h5 {
   font-family: 400;
   font-family: $primaryFont;
 }
+.slick-arrow {
+  &::before {
+    font-size: 50px;
+    color: #cd1d5b;
+  }
+  @media (max-width: 992px) {
+    display: none !important;
+  }
+}

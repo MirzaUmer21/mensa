@@ -54,9 +54,14 @@ export const Services = () => {
               })}
           </Row>
         </div>
-        <div className='seeMore'>
+        <motion.div
+          variants={bottomToTopAnimations}
+          initial='hidden'
+          animate={isVisible ? 'show' : 'hidden'}
+          className='seeMore'
+        >
           <button className='seeMoreButton'>Show All</button>
-        </div>
+        </motion.div>
       </Container>
     </div>
   );

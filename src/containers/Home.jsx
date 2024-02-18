@@ -4,6 +4,7 @@ import { Banner } from '../components/banner/Banner';
 import { About } from './About';
 import { Services } from './Services';
 import { Portfolio } from './Portfolio';
+import { Testimonials } from './Testimonials';
 
 export const Home = () => {
   return (
@@ -17,6 +18,9 @@ export const Home = () => {
       </div>
       <div id='portfolio'>
         <Portfolio />
+      </div>
+      <div id='testimonials'>
+        <Testimonials />
       </div>
     </HomeLayout>
   );

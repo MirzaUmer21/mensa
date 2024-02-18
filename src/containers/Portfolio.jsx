@@ -65,7 +65,7 @@ export const Portfolio = () => {
                 })}
             </div>
           </div>
-          <div className='portfolioImagesWrap'>
+          <div className='portfolioImagesWrap' style={{ overflowX: 'hidden' }}>
             <PortfolioImages isVisible={isVisible} />
           </div>
         </Container>
