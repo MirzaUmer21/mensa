@@ -1,0 +1,14 @@
+.customCheckbox {
+  .ant-checkbox-inner {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-color: #cd1d5b !important;
+  }
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: #cd1d5b !important;
+      border-color: #cd1d5b !important;
+    }
+  }
+}

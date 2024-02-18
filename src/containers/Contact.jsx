@@ -6,6 +6,7 @@ import { CustomInput } from '../common/input/CustomInput';
 import { CustomSelect } from '../common/select/CustomSelect';
 import { CustomTextArea } from '../common/textarea/CustomTextArea';
 import { ArrowRightOutlined } from '@ant-design/icons';
+import { CustomCheckbox } from '../common/checkbox/CustomCheckbox';
 export const Contact = () => {
   const [form] = Form.useForm();
   return (
@@ -33,6 +34,9 @@ export const Contact = () => {
               </Col>
               <Col span={24}>
                 <CustomTextArea placeholder={'Message'} />
+              </Col>
+              <Col span={24}>
+                <CustomCheckbox label={'I agree to the Terms & Conditions*'} />
               </Col>
               <Col span={24}>
                 <div className='submitWrap'>
