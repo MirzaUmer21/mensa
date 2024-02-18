@@ -18,13 +18,13 @@ export const Testimonials = () => {
   return (
     <div className='testimonialsWrapper'>
       <Container>
-        {/* <motion.h1
+        <motion.h1
           variants={rightToLeftAnimations}
           initial='hidden'
           animate={isVisible ? 'show' : 'hidden'}
         >
           TESTIMONIALS{' '}
-        </motion.h1> */}
+        </motion.h1>
         <Slider {...settings}>
           <div>
             <SingleTestimonial index={1} />

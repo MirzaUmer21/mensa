@@ -33,3 +33,10 @@ h5 {
     display: none !important;
   }
 }
+.ant-select-dropdown {
+  background-color: #303030 !important;
+
+  .ant-select-item-option-selected {
+    background-color: #cd1d5b !important;
+  }
+}

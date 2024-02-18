@@ -9,8 +9,11 @@
   background-clip: text;
   color: transparent;
   margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 100px;
+  }
   @media (max-width: 768px) {
-    font-size: 95px;
+    font-size: 80px;
     text-align: center;
   }
 

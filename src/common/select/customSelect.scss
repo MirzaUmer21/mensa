@@ -1,0 +1,21 @@
+.customSelect {
+  .ant-select {
+    outline: none !important;
+    box-shadow: none !important;
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+  }
+  .ant-select-selector {
+    border-radius: 15px;
+    padding: 0 30px !important;
+  }
+  .ant-select-selection-placeholder {
+    font-size: 16px;
+  }
+  .ant-select-selection-item {
+    font-size: 16px;
+  }
+}
