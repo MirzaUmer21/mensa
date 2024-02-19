@@ -7,7 +7,7 @@ function HomeLayout({ children }) {
     <div className='HomeLayout'>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

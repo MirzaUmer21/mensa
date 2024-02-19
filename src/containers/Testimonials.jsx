@@ -28,24 +28,10 @@ export const Testimonials = () => {
         <Slider {...settings}>
           <div>
             <SingleTestimonial index={1} />
-            {/* <h3>1</h3> */}
           </div>
           <div>
             <SingleTestimonial index={1} />
-            {/* <h3>1</h3> */}
           </div>
-          {/* <div>
-            {' '}
-            <h3>1</h3>
-          </div>
-          <div>
-            {' '}
-            <h3>1</h3>
-          </div> */}
-
-          {/* <SingleTestimonial index={1} />
-        <SingleTestimonial index={2} />
-        <SingleTestimonial index={3} /> */}
         </Slider>
       </Container>
     </div>
