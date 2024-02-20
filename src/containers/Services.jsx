@@ -9,6 +9,8 @@ import {
   bottomToTopAnimations,
   topToBottomAnimations
 } from '../helpers/transitions';
+import InfiniteXScroll from '../common/infiniteScroll/InfiniteXScroll';
+import { Client1, Client2, Client3 } from '../assets/images';
 
 export const Services = () => {
   const isVisible = useScrollVisibility('.servicesWrapper');
@@ -63,6 +65,16 @@ export const Services = () => {
           <button className='seeMoreButton'>Show All</button>
         </motion.div>
       </Container>
+      <div className='clients'>
+        <img src={Client1} alt='' />
+        <img src={Client2} alt='' />
+        <img src={Client3} alt='' />
+        <img src={Client1} alt='' />
+        <img src={Client2} alt='' />
+        <img src={Client3} alt='' /> <img src={Client1} alt='' />
+        <img src={Client2} alt='' />
+        <img src={Client3} alt='' />
+      </div>
     </div>
   );
 };

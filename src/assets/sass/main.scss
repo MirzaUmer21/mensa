@@ -40,3 +40,6 @@ h5 {
     background-color: #cd1d5b !important;
   }
 }
+body::-webkit-scrollbar {
+  display: none;
+}

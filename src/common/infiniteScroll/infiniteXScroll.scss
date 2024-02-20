@@ -1,0 +1,10 @@
+.infinite-x-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+  position: relative;
+}
+
+.infinite-x-scroll-content {
+  display: inline-block;
+  position: relative;
+}

@@ -84,4 +84,15 @@
       }
     }
   }
+  .clients {
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    gap: 80px;
+    margin: 70px 0;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
