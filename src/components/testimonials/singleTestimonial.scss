@@ -5,20 +5,23 @@
     margin: 100px 0;
     .slick-slider {
       width: 100%;
-      .slick-track {
-        overflow: hidden;
-      }
+      // .slick-track {
+      //   overflow: hidden;
+      // }
+      // .slick-slide {
+      //   overflow-x: hidden;
+      // }
     }
   }
   .introContainer {
-    // overflow-x: hidden;
+    overflow-x: hidden;
     width: 70%;
   }
   .introWrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     .image {
       height: 225px;
       //   width: 175px;
@@ -64,17 +67,28 @@
     width: 160px;
     border-radius: 50%;
     background-color: #cd1d5b;
+    @media (max-width: 768px) {
+      height: 110px;
+      width: 110px;
+    }
   }
   .topCircle {
     position: absolute;
     top: 43px;
     left: -32px;
+    // margin-left: -39px;
+    @media (max-width: 768px) {
+      left: 10px;
+    }
   }
   .bottomCircle {
     position: absolute;
     bottom: 33px;
     right: 210px;
     z-index: -1;
+    @media (max-width: 768px) {
+      left: 100px;
+    }
   }
   .textWrap {
     display: flex;

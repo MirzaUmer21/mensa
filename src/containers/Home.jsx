@@ -23,7 +23,9 @@ export const Home = () => {
       <div id='testimonials'>
         <Testimonials />
       </div>
-      <Contact />
+      <div id='contact'>
+        <Contact />
+      </div>
     </HomeLayout>
   );
 };

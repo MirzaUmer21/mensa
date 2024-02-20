@@ -11,10 +11,10 @@
   .footerInnerWrap {
     padding: 50px 0 50px 0;
     .customInfoText {
-      font-weight: 400;
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 28px;
+      font-weight: 400 !important;
+      margin-top: 20px !important;
+      font-size: 18px !important;
+      line-height: 28px !important;
       @media (max-width: 768px) {
         text-align: center !important;
       }

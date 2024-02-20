@@ -7,11 +7,18 @@ import { ContainerFluid } from '../../container/ContainerFluid';
 import { useMediaQuery } from 'react-responsive';
 import { ConfigProvider, Drawer } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
+import { useNavigate } from 'react-router-dom';
 export const Header = () => {
   const [open, setOpen] = useState(false);
-
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' });
 
+  const handleClick = () => {
+    setOpen(false);
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <div className='mainHeaderWrap'>
@@ -27,9 +34,12 @@ export const Header = () => {
                 </div>
               ) : (
                 <>
-                  <HeaderMenu />
+                  <HeaderMenu setOpen={setOpen} />
                   <div className='siteHeaderContent'>
-                    <GradientButton text={'Contact us'} />
+                    <GradientButton
+                      onClick={() => handleClick()}
+                      text={'Contact us'}
+                    />
                   </div>
                 </>
               )}
@@ -58,9 +68,9 @@ export const Header = () => {
           open={open}
         >
           <div className='headerDrawerWrapper'>
-            <HeaderMenu />
+            <HeaderMenu setOpen={setOpen} />
 
-            <GradientButton text={'Contact us'} />
+            <GradientButton onClick={() => handleClick()} text={'Contact us'} />
           </div>
         </Drawer>
       </ConfigProvider>

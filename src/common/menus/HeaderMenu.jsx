@@ -1,7 +1,7 @@
 import { Anchor } from 'antd';
 import React from 'react';
 import './headerMenu.scss';
-export const HeaderMenu = () => {
+export const HeaderMenu = ({ setOpen }) => {
   const { Link } = Anchor;
 
   return (
@@ -9,6 +9,7 @@ export const HeaderMenu = () => {
       <Anchor
         affix={false}
         direction='horizontal'
+        onClick={() => setOpen(false)}
         items={[
           {
             key: 'services',
