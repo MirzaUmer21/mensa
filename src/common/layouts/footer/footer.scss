@@ -3,6 +3,11 @@
   border-radius: 15px 15px 0 0;
   background-color: #7d7d7d30;
   text-transform: uppercase !important;
+  .footerLogo {
+    @media (max-width: 768px) {
+      text-align: center !important;
+    }
+  }
   .footerInnerWrap {
     padding: 50px 0 50px 0;
     .customInfoText {
@@ -10,9 +15,13 @@
       margin-top: 20px;
       font-size: 18px;
       line-height: 28px;
+      @media (max-width: 768px) {
+        text-align: center !important;
+      }
     }
 
     .customFooterInfo {
+      margin-top: 15px;
       .customFooterHeading {
         color: #cd1d5b;
         font-size: 18px;
@@ -21,6 +30,9 @@
         letter-spacing: 0.34em;
         text-align: left;
         margin-bottom: 15px;
+        @media (max-width: 768px) {
+          text-align: center !important;
+        }
       }
       p {
         font-size: 12px;
@@ -28,6 +40,9 @@
         line-height: 28px;
         letter-spacing: 0.34em;
         text-align: left;
+        @media (max-width: 768px) {
+          text-align: center !important;
+        }
       }
     }
   }
@@ -35,6 +50,11 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center !important;
+      gap: 40px;
+    }
     .socialLinks {
       font-size: 18px;
       font-weight: 500;

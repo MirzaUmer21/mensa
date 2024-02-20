@@ -10,7 +10,7 @@ export const Footer = () => {
       <Container>
         <div className='footerInnerWrap'>
           <Row gutter={20}>
-            <Col lg={6} md={12} sm={24} xs={24}>
+            <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <div className='footerLogo'>
                 <HeaderLogo />
               </div>
