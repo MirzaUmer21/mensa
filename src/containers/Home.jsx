@@ -6,6 +6,7 @@ import { Services } from './Services';
 import { Portfolio } from './Portfolio';
 import { Testimonials } from './Testimonials';
 import { Contact } from './Contact';
+import { Clients } from './Clients';
 
 export const Home = () => {
   return (
@@ -17,6 +18,10 @@ export const Home = () => {
       <div id='services'>
         <Services />
       </div>
+      <div id='clients'>
+        <Clients />
+      </div>
+
       <div id='portfolio'>
         <Portfolio />
       </div>

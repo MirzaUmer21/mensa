@@ -1,0 +1,11 @@
+.clients {
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  gap: 80px;
+  margin: 70px 40px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

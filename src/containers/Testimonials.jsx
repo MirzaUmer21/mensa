@@ -6,6 +6,7 @@ import useScrollVisibility from '../helpers/UseScrollVisibility';
 import Slider from 'react-slick';
 import { SingleTestimonial } from '../components/testimonials/SingleTestimonial';
 import './testimonials.scss';
+import { testimonials } from '../constants/TestimonialsData';
 export const Testimonials = () => {
   const isVisible = useScrollVisibility('.testimonialsWrapper');
   var settings = {
@@ -26,12 +27,13 @@ export const Testimonials = () => {
           TESTIMONIALS{' '}
         </motion.h1>
         <Slider {...settings}>
-          <div>
-            <SingleTestimonial index={1} />
-          </div>
-          <div>
-            <SingleTestimonial index={1} />
-          </div>
+          {testimonials?.map((testimonial, ind) => {
+            return (
+              <div key={ind}>
+                <SingleTestimonial data={testimonial} index={ind} />
+              </div>
+            );
+          })}
         </Slider>
       </Container>
     </div>

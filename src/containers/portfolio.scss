@@ -19,7 +19,10 @@
     .portfolioTabs {
       display: flex;
       gap: 15px;
-      overflow-x: hidden;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       button {
         padding: 10px 20px;
         background-color: transparent;

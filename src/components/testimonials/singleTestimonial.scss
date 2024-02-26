@@ -42,10 +42,13 @@
     backdrop-filter: blur(10px);
     height: 450px;
     background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1)
-    );
+        to bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url('../../assets/images/testimonialComma.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
     border-radius: 25px;
     padding: 20px;
     display: flex;
@@ -94,7 +97,7 @@
     display: flex;
     align-items: center;
     .testimonialsText {
-      font-size: 22px;
+      font-size: 16px;
     }
   }
 }

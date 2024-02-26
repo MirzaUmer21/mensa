@@ -3,7 +3,12 @@ import './footer.scss';
 import { Container } from '../../container/Container';
 import { Col, Row } from 'antd';
 import { HeaderLogo } from '../../../assets/images';
-import { Facebook, Insta, Twitter } from '../../../assets/icons';
+import {
+  BottomFooterLogo,
+  Facebook,
+  Insta,
+  Twitter
+} from '../../../assets/icons';
 export const Footer = () => {
   return (
     <div className='footerWrapper'>
@@ -18,6 +23,13 @@ export const Footer = () => {
                 Embark on your gaming journey of discovery and excitement right
                 here, where the world of immersive gameplay.{' '}
               </p>
+              <div className='bottomLogo'>
+                <img
+                  style={{ marginTop: '20px' }}
+                  src={BottomFooterLogo}
+                  alt='$$$'
+                />
+              </div>
             </Col>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <h5 className='customFooterHeading'>Games we made</h5>
@@ -28,30 +40,38 @@ export const Footer = () => {
             </Col>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <h5 className='customFooterHeading'>What we Do</h5>
-              <p>GAME 1</p>
-              <p>GAME 2</p>
-              <p>GAME 3</p>
-              <p>GAME 4</p>
+              <p>Monster Jump King</p>
+              <p>Pillow Fight</p>
+              <p>color water sort</p>
+              <p>Basketball Hoop</p>
             </Col>
 
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <h5 className='customFooterHeading'>Get in touch</h5>
               <div className='addressField'>
-                <p>aDdRESS</p>
-                <p>204 Tiara Corner Nevada, uNITED STATES</p>
+                <p>aDdRESS:</p>
+                <p>1309, LeSolarium Tower, Dubai Silicon Oasis, Dubai, UAE</p>
+              </div>
+              <div className='addressField'>
+                <p>Phone:</p>
+                <p>+971545656607</p>
+              </div>{' '}
+              <div className='addressField'>
+                <p>Email:</p>
+                <p>info@mensaesport.com</p>
+              </div>
+              <div className='socialLinks'>
+                <h4>STAY CONNECTED</h4>
+                <div className='links'>
+                  <img src={Facebook} alt='' />
+                  <img src={Insta} alt='' />
+                  <img src={Twitter} alt='' />
+                </div>
               </div>
             </Col>
           </Row>
           <div className='bottomFooterWrap'>
-            <div className='socialLinks'>
-              <h4>STAY CONNECTED</h4>
-              <div className='links'>
-                <img src={Facebook} alt='' />
-                <img src={Insta} alt='' />
-                <img src={Twitter} alt='' />
-              </div>
-            </div>
-            <div className='rightsText'>2024 All Right Reserved</div>
+            <div className='rightsText'>&#169; 2024 All Right Reserved</div>
           </div>
         </div>
       </Container>

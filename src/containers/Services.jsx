@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './services.scss';
 import { Container } from '../common/container/Container';
 import { Col, Row } from 'antd';
@@ -9,11 +9,10 @@ import {
   bottomToTopAnimations,
   topToBottomAnimations
 } from '../helpers/transitions';
-import InfiniteXScroll from '../common/infiniteScroll/InfiniteXScroll';
-import { Client1, Client2, Client3 } from '../assets/images';
 
 export const Services = () => {
   const isVisible = useScrollVisibility('.servicesWrapper');
+  const [displayedServices, setDisplayedServices] = useState(8); // Initially display 8 services
 
   return (
     <div className='servicesWrapper'>
@@ -26,9 +25,9 @@ export const Services = () => {
           OUR SERVICES
         </motion.h1>
         <div className='allServices'>
-          <Row gutter={20}>
+          <Row gutter={20} style={{ justifyContent: 'center' }}>
             {services &&
-              services?.map((service, ind) => {
+              services?.slice(0, displayedServices)?.map((service, ind) => {
                 return (
                   <Col key={ind} lg={6} md={8} sm={12} xs={24}>
                     <motion.div
@@ -46,8 +45,8 @@ export const Services = () => {
                           <div className='icon'>
                             <img src={service?.image} alt='icon' />
                           </div>
+                          <h4>{service?.heading}</h4>
                         </div>
-                        <h4>{service?.heading}</h4>
                         <p>{service?.description}</p>
                       </div>
                     </motion.div>
@@ -56,25 +55,24 @@ export const Services = () => {
               })}
           </Row>
         </div>
-        <motion.div
-          variants={bottomToTopAnimations}
-          initial='hidden'
-          animate={isVisible ? 'show' : 'hidden'}
-          className='seeMore'
-        >
-          <button className='seeMoreButton'>Show All</button>
-        </motion.div>
+        {services.length > displayedServices && (
+          <motion.div
+            variants={bottomToTopAnimations}
+            initial='hidden'
+            animate={isVisible ? 'show' : 'hidden'}
+            className='seeMore'
+          >
+            <button
+              className='seeMoreButton'
+              onClick={() => {
+                setDisplayedServices(displayedServices + 8);
+              }}
+            >
+              Show All
+            </button>
+          </motion.div>
+        )}
       </Container>
-      <div className='clients'>
-        <img src={Client1} alt='' />
-        <img src={Client2} alt='' />
-        <img src={Client3} alt='' />
-        <img src={Client1} alt='' />
-        <img src={Client2} alt='' />
-        <img src={Client3} alt='' /> <img src={Client1} alt='' />
-        <img src={Client2} alt='' />
-        <img src={Client3} alt='' />
-      </div>
     </div>
   );
 };

@@ -3,13 +3,12 @@ import React from 'react';
 import './singleTestimonial.scss';
 import { motion } from 'framer-motion';
 
-import { TestimonialUserImg } from '../../assets/images';
 import {
   leftToRightAnimations,
   rightToLeftAnimations
 } from '../../helpers/transitions';
 import useScrollVisibility from '../../helpers/UseScrollVisibility';
-export const SingleTestimonial = ({ content }) => {
+export const SingleTestimonial = ({ data }) => {
   const isVisible = useScrollVisibility('.singleTestimonialWrap');
 
   return (
@@ -24,17 +23,19 @@ export const SingleTestimonial = ({ content }) => {
           >
             <div className='introContainer'>
               <div className='topCircle circle'></div>
-              <div className='introBox'>
-                <div className='detail'>
-                  <h4>Jaydon Bator</h4>
-                  <h5>Sr. Designer</h5>
+              <div className='backGround'>
+                <div className='introBox'>
+                  <div className='detail'>
+                    <h4>{data?.name}</h4>
+                    <h5>{data?.date}</h5>
+                  </div>
+                  <div className='company'></div>
                 </div>
-                <div className='company'></div>
               </div>
               <div className='bottomCircle circle'></div>
             </div>
             <div className='image'>
-              <img src={TestimonialUserImg} alt='' />
+              <img src={data?.image} alt='User' />
             </div>
           </motion.div>
         </Col>
@@ -45,10 +46,7 @@ export const SingleTestimonial = ({ content }) => {
             animate={isVisible ? 'show' : 'hidden'}
             className='testimonialsText'
           >
-            If anyone is looking to create a book cover, this is the place you
-            need to visit.My editor recommended 99design and I am glad she did.
-            My only regret is that I didn&apos;t here about them for my first 3
-            books.
+            {data?.text}
           </motion.p>
         </Col>
       </Row>
