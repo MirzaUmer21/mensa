@@ -7,6 +7,7 @@ import {
   BottomFooterLogo,
   Facebook,
   Insta,
+  Linkedin,
   Twitter
 } from '../../../assets/icons';
 export const Footer = () => {
@@ -63,9 +64,35 @@ export const Footer = () => {
               <div className='socialLinks'>
                 <h4>STAY CONNECTED</h4>
                 <div className='links'>
-                  <img src={Facebook} alt='' />
-                  <img src={Insta} alt='' />
-                  <img src={Twitter} alt='' />
+                  <a
+                    href='https://www.facebook.com/profile.php?id=100092881405746'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src={Facebook} alt='' />
+                  </a>
+
+                  <a
+                    href='https://www.linkedin.com/company/mensa-esport/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src={Linkedin} alt='' />
+                  </a>
+                  <a
+                    href='https://www.facebook.com/profile.php?id=100092881405746'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src={Twitter} alt='' />
+                  </a>
+                  <a
+                    href='https://www.instagram.com/mensaesport/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src={Insta} alt='' />
+                  </a>
                 </div>
               </div>
             </Col>
