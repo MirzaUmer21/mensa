@@ -9,6 +9,7 @@ import './testimonials.scss';
 import { testimonials } from '../constants/TestimonialsData';
 export const Testimonials = () => {
   const isVisible = useScrollVisibility('.testimonialsWrapper');
+
   var settings = {
     dots: false,
     infinite: true,

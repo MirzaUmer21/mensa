@@ -26,12 +26,15 @@ h5 {
 }
 .slick-arrow {
   &::before {
-    font-size: 50px;
+    font-size: 35px;
     color: #cd1d5b;
   }
   @media (max-width: 992px) {
     display: none !important;
   }
+}
+.slick-next {
+  right: -15px;
 }
 .ant-select-dropdown {
   background-color: #303030 !important;
