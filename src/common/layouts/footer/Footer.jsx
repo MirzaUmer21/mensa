@@ -18,7 +18,15 @@ export const Footer = () => {
           <Row gutter={20}>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <div className='footerLogo'>
-                <HeaderLogo />
+                <HeaderLogo
+                  style={{ cursor: 'pointer' }}
+                  onClick={() =>
+                    window.scrollTo({
+                      behavior: 'smooth',
+                      top: 0
+                    })
+                  }
+                />
               </div>
               <p className='customInfoText'>
                 Embark on your gaming journey of discovery and excitement right

@@ -7,6 +7,7 @@ import { CustomSelect } from '../common/select/CustomSelect';
 import { CustomTextArea } from '../common/textarea/CustomTextArea';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { CustomCheckbox } from '../common/checkbox/CustomCheckbox';
+import { GradientButton } from '../common/button/GradientButton';
 export const Contact = () => {
   const [form] = Form.useForm();
   return (
@@ -40,9 +41,7 @@ export const Contact = () => {
               </Col>
               <Col span={24}>
                 <div className='submitWrap'>
-                  <button className='customContactButton'>
-                    Send message <ArrowRightOutlined />
-                  </button>
+                  <GradientButton text={'Send message'} />
                 </div>
               </Col>
             </Row>

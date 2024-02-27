@@ -16,9 +16,11 @@ export const Header = () => {
     setOpen(false);
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const offset = contactSection.offsetTop - 100;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   };
+
   return (
     <>
       <div className='mainHeaderWrap'>
@@ -26,14 +28,22 @@ export const Header = () => {
           <ContainerFluid>
             <div className='headerContent'>
               <div className='siteHeaderLogo'>
-                <HeaderLogo />
+                <HeaderLogo
+                  style={{ cursor: 'pointer' }}
+                  onClick={() =>
+                    window.scrollTo({
+                      behavior: 'smooth',
+                      top: 0
+                    })
+                  }
+                />
               </div>
               {isTabletOrMobile ? (
                 <div className='menuMobile'>
                   <MenuOutlined onClick={() => setOpen(true)} />
                 </div>
               ) : (
-                <>
+                <div className='headerMenuOptionsWrap'>
                   <HeaderMenu setOpen={setOpen} />
                   <div className='siteHeaderContent'>
                     <GradientButton
@@ -41,7 +51,7 @@ export const Header = () => {
                       text={'Contact us'}
                     />
                   </div>
-                </>
+                </div>
               )}
             </div>
           </ContainerFluid>

@@ -10,7 +10,13 @@ export const HeaderMenu = ({ setOpen }) => {
         affix={false}
         direction='horizontal'
         onClick={() => setOpen(false)}
+        offsetTop={100}
         items={[
+          {
+            key: 'about',
+            href: '#about',
+            title: 'About Us'
+          },
           {
             key: 'services',
             href: '#services',
@@ -25,11 +31,6 @@ export const HeaderMenu = ({ setOpen }) => {
             key: 'testimonials',
             href: '#testimonials',
             title: 'Testimonials'
-          },
-          {
-            key: 'about',
-            href: '#about',
-            title: 'About Us'
           }
         ]}
       ></Anchor>

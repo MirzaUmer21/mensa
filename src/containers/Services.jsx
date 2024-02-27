@@ -36,9 +36,7 @@ export const Services = () => {
                       }
                       initial='hidden'
                       animate={isVisible ? 'show' : 'hidden'}
-                      className={`${'singleServiceCard'} ${
-                        ind < 4 ? 'borderTop' : 'borderBottom'
-                      }`}
+                      className={`${'singleServiceCard'} ${'borderTop'}`}
                     >
                       <div className='content'>
                         <div className='headIcon'>

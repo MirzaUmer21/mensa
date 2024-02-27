@@ -11,7 +11,8 @@ export const Banner = () => {
   const handleClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const offset = contactSection.offsetTop - 100;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   };
   return (
