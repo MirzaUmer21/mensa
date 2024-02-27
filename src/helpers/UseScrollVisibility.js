@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 const useScrollVisibility = (elementSelector, margin = -100) => {
   const [isVisible, setIsVisible] = useState(false);
-  const [lastScrollPosition, setLastScrollPosition] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,10 +30,8 @@ const useScrollVisibility = (elementSelector, margin = -100) => {
       } else {
         setIsVisible(false); // Element not found, set visibility to false
       }
-
-      setLastScrollPosition(scrollPosition);
     };
-
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

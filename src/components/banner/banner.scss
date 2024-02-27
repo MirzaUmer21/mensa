@@ -1,6 +1,7 @@
 @import '../../assets/sass/variables.scss';
 .mainSiteBanner {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 800px;
   position: relative;
   width: 100%;
   .backgroundImage {
@@ -8,9 +9,10 @@
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 800px;
     width: auto;
-    height: auto;
+
     z-index: -100;
     background-size: cover;
     overflow: hidden;
