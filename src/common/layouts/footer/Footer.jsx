@@ -30,7 +30,7 @@ export const Footer = () => {
               </div>
               <p className='customInfoText'>
                 Embark on your gaming journey of discovery and excitement right
-                here, where the world of immersive gameplay.{' '}
+                here, where the world of immersive gameplay.
               </p>
               <div className='bottomLogo'>
                 <img
@@ -41,14 +41,14 @@ export const Footer = () => {
               </div>
             </Col>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
-              <h5 className='customFooterHeading'>Games we made</h5>
+              <h5 className='customFooterHeading'>What we Do</h5>
               <p>Game Development</p>
               <p>Unity game</p>
               <p>Mobile game development</p>
-              <p>Unity game development</p>
+              <p>Unity game development </p>
             </Col>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
-              <h5 className='customFooterHeading'>What we Do</h5>
+              <h5 className='customFooterHeading'>Games we made</h5>
               <p>Monster Jump King</p>
               <p>Pillow Fight</p>
               <p>color water sort</p>
@@ -58,7 +58,7 @@ export const Footer = () => {
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <h5 className='customFooterHeading'>Get in touch</h5>
               <div className='addressField'>
-                <p>aDdRESS:</p>
+                <p>Address:</p>
                 <p>1309, LeSolarium Tower, Dubai Silicon Oasis, Dubai, UAE</p>
               </div>
               <div className='addressField'>
@@ -88,7 +88,7 @@ export const Footer = () => {
                     <img src={Linkedin} alt='' />
                   </a>
                   <a
-                    href='https://www.facebook.com/profile.php?id=100092881405746'
+                    href='https://twitter.com/MensaPlay'
                     target='_blank'
                     rel='noopener noreferrer'
                   >

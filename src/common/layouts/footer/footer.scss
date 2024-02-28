@@ -1,8 +1,9 @@
+@import '../../../assets/sass/_variables.scss';
 .footerWrapper {
   margin-top: 60px;
   border-radius: 15px 15px 0 0;
   background-color: #7d7d7d30;
-  text-transform: uppercase !important;
+  text-transform: capitalize !important;
   .footerLogo {
     @media (max-width: 768px) {
       text-align: center !important;
@@ -20,6 +21,7 @@
       margin-top: 20px !important;
       font-size: 16px !important;
       line-height: 28px !important;
+      font-family: $playBold;
       @media (max-width: 768px) {
         text-align: center !important;
       }
@@ -61,7 +63,8 @@
         }
       }
       p {
-        font-size: 12px;
+        font-family: $playBold;
+        font-size: 13px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0.34em;

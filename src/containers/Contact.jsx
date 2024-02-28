@@ -12,10 +12,9 @@ export const Contact = () => {
   const [form] = Form.useForm();
   return (
     <div className='contactWrapper'>
-      <div className='contactHeading'>
-        <h3>We’ll Build it for You</h3>
-      </div>
       <Container>
+        <h1>CONTACT US </h1>
+
         <div className='contactForm'>
           <Form form={form} layout='vertical'>
             <Row gutter={[100, 30]}>
