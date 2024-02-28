@@ -67,7 +67,9 @@ export const Footer = () => {
               </div>{' '}
               <div className='addressField'>
                 <p>Email:</p>
-                <p>info@mensaesport.com</p>
+                <p style={{ textTransform: 'lowercase' }}>
+                  info@mensaesport.com
+                </p>
               </div>
               <div className='socialLinks'>
                 <h4>STAY CONNECTED</h4>
