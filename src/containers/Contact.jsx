@@ -25,11 +25,25 @@ export const Contact = () => {
                 <CustomInput placeholder={'Email*'} />
               </Col>
               <Col span={24}>
-                <CustomSelect placeholder={'What are you seeking for?'} />
+                <CustomSelect
+                  placeholder={'What are you seeking for?'}
+                  options={[
+                    { label: 'Mobile Game Development', value: 'mobile' },
+                    { label: 'Unity Game Development', value: 'unity' },
+                    { label: 'Game Porting', value: 'porting' },
+                    { label: '3D Games', value: '3d' }
+                  ]}
+                />
               </Col>
               <Col span={24}>
                 <CustomSelect
-                  placeholder={'How did you hear about Inletsky?'}
+                  placeholder={'How did you hear about mensa?'}
+                  options={[
+                    { label: 'Facebook', value: 'facebook' },
+                    { label: 'Linkedin', value: 'linkedin' },
+                    { label: 'Twitter', value: 'twitter' },
+                    { label: 'Instagram', value: 'instagram' }
+                  ]}
                 />
               </Col>
               <Col span={24}>

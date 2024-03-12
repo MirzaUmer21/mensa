@@ -1,23 +1,22 @@
 export const portfolioTabs = [
   {
-    heading: 'FEATURED'
+    heading: 'FEATURED',
+    key: 'featured'
   },
   {
-    heading: '3d ART'
+    heading: '3d ART',
+    key: 'threeDimentionalArt'
   },
   {
-    heading: 'characters'
+    heading: 'characters',
+    key: 'characters'
   },
   {
-    heading: 'environmentS'
+    heading: 'environmentS',
+    key: 'environments'
   },
   {
-    heading: 'coNCEPT ART'
-  },
-  {
-    heading: 'gAME ETelements '
-  },
-  {
-    heading: 'ui/ux'
+    heading: 'ui/ux',
+    key: 'uiux'
   }
 ];

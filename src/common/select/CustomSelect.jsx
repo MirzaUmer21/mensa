@@ -1,7 +1,7 @@
 import { ConfigProvider, Select } from 'antd';
 import React from 'react';
 import './customSelect.scss';
-export const CustomSelect = ({ placeholder }) => {
+export const CustomSelect = ({ placeholder, options }) => {
   return (
     <ConfigProvider
       theme={{
@@ -19,12 +19,7 @@ export const CustomSelect = ({ placeholder }) => {
       }}
     >
       <Select
-        options={[
-          { value: 'jack', label: 'Jack' },
-          { value: 'lucy', label: 'Lucy' },
-          { value: 'Yiminghe', label: 'yiminghe' },
-          { value: 'disabled', label: 'Disabled' }
-        ]}
+        options={options}
         placeholder={placeholder}
         className='customSelect'
         style={{ height: '53px', width: '100%' }}

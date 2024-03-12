@@ -6,22 +6,27 @@ import { motion } from 'framer-motion';
 import { topToBottomAnimations } from '../helpers/transitions';
 import { portfolioTabs } from '../constants/PortfolioData';
 import { PortfolioImages } from '../components/portfolio/PortfolioImages';
-import { Col, Row } from 'antd';
 import {
-  Portfolio1,
-  Portfolio2,
-  Portfolio3,
-  Portfolio4,
-  Portfolio5
-} from '../assets/images';
+  portfolioCharacterImages,
+  portfolioEnvironmentImages,
+  portfolioFeaturedImages,
+  portfolioUIUXImages,
+  threeDimentionalArtImages
+} from '../components/portfolio/constants';
 
 export const Portfolio = () => {
-  const isVisible = useScrollVisibility('.portfolioWrapper');
-
   const [activePortfolioTab, setActivePortfolioTab] = useState('featured');
+  const isVisible = useScrollVisibility('.portfolioWrapper');
+  const allPortfolioItems = {
+    featured: portfolioFeaturedImages,
+    threeDimentionalArt: threeDimentionalArtImages,
+    characters: portfolioCharacterImages,
+    environments: portfolioEnvironmentImages,
+    uiux: portfolioUIUXImages
+  };
   return (
     <div>
-      <div className='portfolioWrapper'>
+      <div className={`portfolioWrapper`}>
         <Container>
           <motion.h1
             variants={topToBottomAnimations}
@@ -36,11 +41,12 @@ export const Portfolio = () => {
             animate={isVisible ? 'show' : 'hidden'}
             className='portfolioSubHeading'
           >
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur.
+            Discover unparalleled gaming experiences with Mensa Esport.
+            Specializing in Unity game development for Android, iOS, and Windows
+            platforms, our team transforms ideas into captivating realities.
+            From immersive UI/UX design to seamless mobile app development,
+            AR/VR/XR experiences, blockchain integration, and Web 3 services,
+            we&apos;re your gateway to innovation.
           </motion.h4>
 
           <div className='mainPortfolioWrap'>
@@ -50,13 +56,13 @@ export const Portfolio = () => {
                   return (
                     <button
                       className={`portfolioTab ${
-                        activePortfolioTab === tab?.heading?.toLowerCase()
+                        activePortfolioTab === tab?.key
                           ? 'activePortfolioTab'
                           : ''
                       }`}
-                      onClick={() =>
-                        setActivePortfolioTab(tab?.heading?.toLowerCase())
-                      }
+                      onClick={() => {
+                        setActivePortfolioTab(tab?.key);
+                      }}
                       key={ind}
                     >
                       {tab?.heading}
@@ -66,7 +72,13 @@ export const Portfolio = () => {
             </div>
           </div>
           <div className='portfolioImagesWrap' style={{ overflow: 'hidden' }}>
-            <PortfolioImages isVisible={isVisible} />
+            {allPortfolioItems[activePortfolioTab] ? (
+              <PortfolioImages
+                images={allPortfolioItems[activePortfolioTab]}
+                isVisible={isVisible}
+                activeTab={activePortfolioTab}
+              />
+            ) : null}
           </div>
         </Container>
       </div>
