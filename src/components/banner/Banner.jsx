@@ -5,7 +5,7 @@ import useScrollVisibility from '../../helpers/UseScrollVisibility';
 import { bottomToTopAnimations } from '../../helpers/transitions';
 import { motion } from 'framer-motion';
 import { Container } from '../../common/container/Container';
-
+import video from '../../assets/videos/bannerVideo.mp4';
 export const Banner = () => {
   const isVisible = useScrollVisibility('.mainSiteBanner');
   const handleClick = () => {
@@ -18,7 +18,10 @@ export const Banner = () => {
   return (
     <div className='mainSiteBanner'>
       <div className='backgroundImage'>
-        <BannerBackground />
+        <video autoPlay muted loop id='myVideo'>
+          <source src={video} type='video/mp4' />
+        </video>
+        {/* <BannerBackground /> */}
       </div>
       <motion.div
         variants={bottomToTopAnimations}
