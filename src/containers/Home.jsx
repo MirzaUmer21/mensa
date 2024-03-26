@@ -21,7 +21,6 @@ export const Home = () => {
       <div id='clients'>
         <Clients />
       </div>
-
       <div id='portfolio'>
         <Portfolio />
       </div>

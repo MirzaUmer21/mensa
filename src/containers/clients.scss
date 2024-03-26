@@ -1,11 +1,9 @@
 .clients {
-  overflow-x: scroll;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-  gap: 80px;
-  margin: 70px 40px;
-  &::-webkit-scrollbar {
-    display: none;
+  margin: 50px 40px;
+
+  .imgContain {
+    height: 100px;
+    display: flex;
+    align-items: center;
   }
 }
