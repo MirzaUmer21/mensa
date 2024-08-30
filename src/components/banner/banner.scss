@@ -22,7 +22,7 @@
       left: 50%;
       min-width: 100%;
       width: auto;
-      background-image: linear-gradient(to top, black, #e03f3f);
+      background-image: linear-gradient(to top, black, #ff0000);
 
       height: auto;
       z-index: -100;
@@ -78,17 +78,18 @@
         }
       }
       .demoButton {
-        background-color: #cd1d5b;
-        padding: 15px 35px;
+        background-color: #cc0022;
+        padding: 10px 45px;
         margin-right: 30px;
         border: none;
-        clip-path: polygon(0% 0%, 100% 0, 100% 79%, 90% 100%, 0% 100%);
+        // clip-path: polygon(0% 0%, 100% 0, 100% 79%, 90% 100%, 0% 100%);
         cursor: pointer;
         font-family: $playBold;
         font-size: 19px;
         font-weight: bold;
         line-height: 21px;
-        border: 1px solid #cd1d5b;
+        border: 1px solid #cc0022;
+        border-radius: 5px;
         @media (max-width: 768px) {
           margin-left: 30px;
         }

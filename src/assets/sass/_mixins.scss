@@ -31,7 +31,7 @@
   min-width: 177px;
   padding: 0 10px;
   background-color: $primaryColor;
-  background-image: linear-gradient(to bottom right, #cd1d5b, #e03f3f);
+  background-image: linear-gradient(to bottom right, #cc0022, #ff0000);
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -43,7 +43,7 @@
     color: $secondaryColor;
     background-color: $primaryColor;
     border: 1px solid $secondaryColor;
-    // border-image: linear-gradient(to bottom right, #cd1d5b, #e03f3f) 5;
+    // border-image: linear-gradient(to bottom right, #cc0022, #e03f3f) 5;
     transition: 0.3s ease-in;
   }
 }

@@ -30,7 +30,7 @@
     .customFooterInfo {
       margin-top: 15px;
       .customFooterHeading {
-        color: #cd1d5b;
+        color: #cc0022;
         font-size: 18px;
         font-weight: 500;
         line-height: 28px;
@@ -57,7 +57,8 @@
         }
         .links {
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
+          gap: 20px;
           align-items: center;
           margin-top: 25px;
           cursor: pointer;

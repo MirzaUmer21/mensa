@@ -41,7 +41,7 @@ export const Portfolio = () => {
             animate={isVisible ? 'show' : 'hidden'}
             className='portfolioSubHeading'
           >
-            Discover unparalleled gaming experiences with Mensa Esport.
+            Discover unparalleled gaming experiences with Igris Studio.
             Specializing in Unity game development for Android, iOS, and Windows
             platforms, our team transforms ideas into captivating realities.
             From immersive UI/UX design to seamless mobile app development,

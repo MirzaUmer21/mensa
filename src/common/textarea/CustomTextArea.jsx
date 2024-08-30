@@ -10,10 +10,10 @@ export const CustomTextArea = ({ placeholder }) => {
           colorBorder: 'transparent',
           colorText: '#fff',
           colorTextPlaceholder: '#fff',
-          activeBorderColor: '#cd1d5b',
-          hoverBorderColor: '#cd1d5b',
-          colorPrimary: '#cd1d5b',
-          colorPrimaryActive: '#cd1d5b'
+          activeBorderColor: '#cc0022',
+          hoverBorderColor: '#cc0022',
+          colorPrimary: '#cc0022',
+          colorPrimaryActive: '#cc0022'
         }
       }}
     >

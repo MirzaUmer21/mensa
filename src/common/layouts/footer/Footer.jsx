@@ -8,6 +8,7 @@ import {
   Facebook,
   Insta,
   Linkedin,
+  Medium,
   Twitter
 } from '../../../assets/icons';
 export const Footer = () => {
@@ -68,41 +69,41 @@ export const Footer = () => {
               <div className='addressField'>
                 <p>Email:</p>
                 <p style={{ textTransform: 'lowercase' }}>
-                  info@mensaesport.com
+                  sales@igrisstudio.com
                 </p>
               </div>
               <div className='socialLinks'>
                 <h4>STAY CONNECTED</h4>
                 <div className='links'>
-                  <a
+                  {/* <a
                     href='https://www.facebook.com/profile.php?id=100092881405746'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
                     <img src={Facebook} alt='' />
-                  </a>
+                  </a> */}
 
                   <a
-                    href='https://www.linkedin.com/company/mensa-esport/'
+                    href='https://www.linkedin.com/company/igris-studio/about/?viewAsMember=true'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
                     <img src={Linkedin} alt='' />
                   </a>
                   <a
-                    href='https://twitter.com/MensaPlay'
+                    href='https://medium.com/@igrisstudio'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <img src={Twitter} alt='' />
+                    <img src={Medium} alt='' />
                   </a>
-                  <a
+                  {/* <a
                     href='https://www.instagram.com/mensaesport/'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
                     <img src={Insta} alt='' />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </Col>

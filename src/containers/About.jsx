@@ -67,7 +67,7 @@ export const About = () => {
                     >
                       <div className='aboutText'>
                         <p>
-                          At Mensa Esport, we&apos;re dedicated to delivering
+                          At Igris Studio, we&apos;re dedicated to delivering
                           exceptional results for our clients. Our experienced
                           team takes a collaborative approach, understanding
                           your vision and bringing it to life with meticulous
@@ -118,7 +118,7 @@ export const About = () => {
                     >
                       <div className='aboutText'>
                         <p>
-                          At Mensa Esport, we&apos;re dedicated to delivering
+                          At Igris Studio, we&apos;re dedicated to delivering
                           exceptional results for our clients. Our experienced
                           team takes a collaborative approach, understanding
                           your vision and bringing it to life with meticulous

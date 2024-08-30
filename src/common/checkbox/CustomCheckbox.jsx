@@ -6,7 +6,7 @@ export const CustomCheckbox = ({ label }) => {
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: '#cd1d5b'
+          colorPrimary: '#cc0022'
         }
       }}
     >

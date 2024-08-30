@@ -17,7 +17,7 @@
       width: 100%;
       z-index: -1;
       max-width: 1600px;
-      background-image: linear-gradient(to right, #cd1d5b, #e03f3f);
+      background-image: linear-gradient(to right, #d0001f, #fc0002);
     }
     .aboutCountsWrapper {
       .aboutCover {
@@ -96,8 +96,8 @@
           border: 2px solid $secondaryColor;
           border-image: linear-gradient(
               to left,
-              #cd1d5b,
-              #cd1d5b00,
+              #cc0022,
+              #cc002200,
               transparent
             )
             1;
@@ -105,7 +105,7 @@
           p {
             line-height: 24px;
             padding: 40px;
-            // -webkit-text-stroke: 0.5px #cd1d5b;
+            // -webkit-text-stroke: 0.5px #cc0022;
             font-size: 18px; /* Text stroke with width and color */
             @media (max-width: 768px) {
               font-size: 12px;
@@ -136,7 +136,7 @@
   //     max-width: 900px;
   //     right: 0;
   //     border: 2px solid $secondaryColor;
-  //     border-image: linear-gradient(to left, #cd1d5b, #cd1d5b00, transparent) 1;
+  //     border-image: linear-gradient(to left, #cc0022, #cc002200, transparent) 1;
   //     top: 230px;
   //     @media (max-width: 1024px) {
   //       position: unset !important;
@@ -145,7 +145,7 @@
   //     p {
   //       line-height: 24px;
   //       padding: 40px;
-  //       -webkit-text-stroke: 0.5px #cd1d5b;
+  //       -webkit-text-stroke: 0.5px #cc0022;
   //       font-size: 18px; /* Text stroke with width and color */
   //       @media (max-width: 1024px) {
   //         font-size: 12px;
@@ -155,7 +155,7 @@
   //   }
   //   .aboutCountsWrapper {
   //     // height: 258px;
-  //     background-image: linear-gradient(to right, #cd1d5b, #e03f3f);
+  //     background-image: linear-gradient(to right, #cc0022, #e03f3f);
 
   //     .aboutCounts {
   //       // position: absolute;

@@ -27,7 +27,7 @@ h5 {
 .slick-arrow {
   &::before {
     font-size: 35px;
-    color: #cd1d5b;
+    color: #cc0022;
   }
   @media (max-width: 992px) {
     display: none !important;
@@ -40,7 +40,7 @@ h5 {
   background-color: #303030 !important;
 
   .ant-select-item-option-selected {
-    background-color: #cd1d5b !important;
+    background-color: #cc0022 !important;
   }
 }
 body::-webkit-scrollbar {

@@ -29,7 +29,7 @@ export const Header = () => {
             <div className='headerContent'>
               <div className='siteHeaderLogo'>
                 <HeaderLogo
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: 'pointer', height: 'auto', width: '55px' }}
                   onClick={() =>
                     window.scrollTo({
                       behavior: 'smooth',
@@ -61,7 +61,7 @@ export const Header = () => {
         theme={{
           token: {
             colorBgElevated: '#1d1d1d',
-            colorIcon: '#cd1d5b'
+            colorIcon: '#cc0022'
           }
         }}
       >
