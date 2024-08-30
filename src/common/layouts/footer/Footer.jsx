@@ -33,13 +33,13 @@ export const Footer = () => {
                 Embark on your gaming journey of discovery and excitement right
                 here, where the world of immersive gameplay.
               </p>
-              <div className='bottomLogo'>
+              {/* <div className='bottomLogo'>
                 <img
                   style={{ marginTop: '20px' }}
                   src={BottomFooterLogo}
                   alt='$$$'
                 />
-              </div>
+              </div> */}
             </Col>
             <Col lg={6} md={12} sm={24} xs={24} className='customFooterInfo'>
               <h5 className='customFooterHeading'>What we Do</h5>
