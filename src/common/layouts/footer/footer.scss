@@ -43,6 +43,14 @@
       .addressField {
         display: flex;
         gap: 10px;
+        p {
+          &:first-child {
+            width: 20% !important;
+          }
+          &:last-child {
+            width: 80% !important;
+          }
+        }
       }
       .socialLinks {
         font-size: 18px;
